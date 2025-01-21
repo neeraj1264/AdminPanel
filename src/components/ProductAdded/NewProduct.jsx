@@ -222,9 +222,9 @@ const NewProduct = ({ setSelectedProducts }) => {
     }
   };
   
-  const handleNavigateToInvoice = () => {
-    navigate("/invoice");
-  };
+  // const handleNavigateToInvoice = () => {
+  //   navigate("/invoice");
+  // };
 
   return (
     <div>
@@ -242,7 +242,7 @@ const NewProduct = ({ setSelectedProducts }) => {
           onChange={handleImageChange}
         />
 
-        {/* <div className="image-container">
+        <div className="image-container">
           <div
             className="camera"
             onClick={() => document.getElementById("imageInput").click()}
@@ -262,7 +262,7 @@ const NewProduct = ({ setSelectedProducts }) => {
               <FaTimes className="remove-icon" onClick={removeImage} />
             </div>
           )}
-        </div> */}
+        </div> 
 
         <input
           type="text"
@@ -379,10 +379,10 @@ const NewProduct = ({ setSelectedProducts }) => {
         </div>
       )}
 
-      <button onClick={handleNavigateToInvoice} className="Invoice-btn">
+      {/* <button onClick={handleNavigateToInvoice} className="Invoice-btn">
         Invoice
         <FaArrowRight className="Invoice-arrow" />
-      </button>
+      </button> */}
     </div>
   );
 };
